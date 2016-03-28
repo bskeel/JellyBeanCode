@@ -32,8 +32,8 @@ class NumJellyEstimator:
 
         # Check that the value is between zero and one.
         if ((frac <= 0.0) or (frac >= 1.0)):
-            print "\nError: Fraction of land used for sugar must be between"\
-                  +" 0.0 and 1.0.\n"
+            print ("\nError: Fraction of land used for sugar must be between"\
+                  +" 0.0 and 1.0.\n")
             sys.exit()
 
         # Store the fraction.
@@ -51,11 +51,11 @@ class NumJellyEstimator:
         # NE24: Add a test for value here
         if(fracPplLovingPink == 0)
             if(people < 0)
-                "Error: variable 'people' cannot be a negative value"
+                print ("Error: variable 'people' cannot be a negative value")
                 #Checks to see if the input value of people is negative
         else
             if(people <= (1/fracPplLovingPink))
-                "Error: People Must be a positive integer value"
+                print ("Error: People Must be a positive integer value")
                 #Accounts for the case where the fraction of people loving pink is nonzero (the fraction must ensure there is an integer number of people who like pink)
             
         # Store the fraction.
@@ -71,7 +71,7 @@ class NumJellyEstimator:
         
         # NE24: Add a test for value here
         if((frac < 0) or (frac > 1))
-            "Error: variable 'frac must be between zero and one'"
+            print("Error: variable 'frac must be between zero and one'")
             
         # Store the fraction.
         self.fracPplLovingPink = frac
@@ -91,8 +91,8 @@ class NumJellyEstimator:
         n = self.fracLand4Sugar * self.worldPop * self.scalingConst
         # If this value is zero, it means that some value didn't get set.
         if (n == 0.0):
-            print "\nError: fraction of land for sugar and world population"\
-                  +"must be set before computing estimate.\n"
+            print ("\nError: fraction of land for sugar and world population"\
+                  +"must be set before computing estimate.\n")
         return int(n)
 
 
@@ -103,9 +103,9 @@ class NumJellyEstimator:
             (1.0 - self.fracPplLovingPink)
         # If this value is zero, it means that some value didn't get set.
         if (n == 0.0):
-            print "\nError: fraction of land for sugar, world population, and"\
+            print ("\nError: fraction of land for sugar, world population, and"\
                   +"fraction of people loving pink must be set before "\
-                  +"computing estimate.\n"
+                  +"computing estimate.\n")
 
         # NE24: What other checks might be useful? What is a better way to do this?
         
