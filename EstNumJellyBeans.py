@@ -49,12 +49,12 @@ class NumJellyEstimator:
             "Error: variable 'people' must be an integer"
  
         # NE24: Add a test for value here
-        if(fracPplLovingPink == 0)
-            if(people < 0)
+        if(fracPplLovingPink == 0):
+            if(people < 0):
                 print ("Error: variable 'people' cannot be a negative value")
                 #Checks to see if the input value of people is negative
         else
-            if(people <= (1/fracPplLovingPink))
+            if(people <= (1/fracPplLovingPink)):
                 print ("Error: People Must be a positive integer value")
                 #Accounts for the case where the fraction of people loving pink is nonzero (the fraction must ensure there is an integer number of people who like pink)
             
@@ -70,7 +70,7 @@ class NumJellyEstimator:
             "Error: variable 'frac' must be of type float"
         
         # NE24: Add a test for value here
-        if((frac < 0) or (frac > 1))
+        if((frac < 0) or (frac > 1)):
             print("Error: variable 'frac must be between zero and one'")
             
         # Store the fraction.
