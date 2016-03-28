@@ -45,9 +45,19 @@ class NumJellyEstimator:
     def set_world_pop(self, people):
 
         # NE24: Add a test for type here
+        assert type(people) is int, \
+            "Error: variable 'people' must be an integer"
  
         # NE24: Add a test for value here
-
+        if(fracPplLovingPink == 0)
+            if(people < 0)
+                "Error: variable 'people' cannot be a negative value"
+                #Checks to see if the input value of people is negative
+        else
+            if(people <= (1/fracPplLovingPink))
+                "Error: People Must be a positive integer value"
+                #Accounts for the case where the fraction of people loving pink is nonzero (the fraction must ensure there is an integer number of people who like pink)
+            
         # Store the fraction.
         self.worldPop = people
 
@@ -56,9 +66,13 @@ class NumJellyEstimator:
     def set_frac_ppl_loving_pink(self, frac):
 
         # NE24: Add a test for type here
-
+        assert type(frac) is float, \
+            "Error: variable 'frac' must be of type float"
+        
         # NE24: Add a test for value here
-
+        if((frac < 0) or (frac > 1))
+            "Error: variable 'frac must be between zero and one'"
+            
         # Store the fraction.
         self.fracPplLovingPink = frac
 
@@ -94,7 +108,7 @@ class NumJellyEstimator:
                   +"computing estimate.\n"
 
         # NE24: What other checks might be useful? What is a better way to do this?
-
+        
         return int(n)
 
 
