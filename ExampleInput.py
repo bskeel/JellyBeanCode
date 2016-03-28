@@ -19,6 +19,6 @@ estimator.set_frac_ppl_loving_pink(pink_frac)
 # and report the result given the input.
 est = estimator.compute_Njelly_est()
 
-print "\nIt is estimated that when\n", land_frac*100, "percent\nof the land is"+\
+print ("\nIt is estimated that when\n", land_frac*100, "percent\nof the land is"+\
       " used for sugar and\n", pink_frac*100, "percent of", int(ppl), \
-      "people\nLOVE pink, then there are\n", est, "\nJelly Beans in the world."
+      "people\nLOVE pink, then there are\n", est, "\nJelly Beans in the world.")
