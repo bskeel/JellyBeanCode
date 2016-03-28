@@ -53,7 +53,7 @@ class NumJellyEstimator:
             if(people < 0):
                 print ("Error: variable 'people' cannot be a negative value")
                 #Checks to see if the input value of people is negative
-        else
+        else:
             if(people <= (1/fracPplLovingPink)):
                 print ("Error: People Must be a positive integer value")
                 #Accounts for the case where the fraction of people loving pink is nonzero (the fraction must ensure there is an integer number of people who like pink)
